@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product Page</title>
+    <link rel="stylesheet" href="singleProduct.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="s-navbar">
+      <!-- Large devices content -->
+      <div class="nav-left">
+        <button class="nav-button">Shop</button>
+        <button class="nav-button">About</button>
+        <button class="nav-button search-button">🔍</button>
+      </div>
+      <div class="nav-center">
+        <h1 class="logo"><a href="index.html">THE FIGMA STORE</a></h1>
+      </div>
+      <div class="nav-right">
+        <button class="nav-button profile-button">👤</button>
+        <select class="country-select">
+          <option value="us">United States</option>
+          <option value="ca">Canada</option>
+          <option value="uk">United Kingdom</option>
+        </select>
+        <button class="nav-button cart-button">Cart 0</button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile-nav">
+        <button class="hamburger-menu">☰</button>
+        <div class="mobile-menu-header">
+          <button class="nav-button search-button">🔍</button>
+          <h1 class="logo"><a href="index.html">THE FIGMA STORE</a></h1>
+          <div class="mobile-menu-right">
+            <button class="nav-button profile-button">👤</button>
+            <button class="nav-button cart-button">0</button>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <button class="close-menu">✖</button>
+        <ul class="mobile-nav-items">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="product-page">
+      <div class="product-images">
+        <div class="image-thumbnails">
+          <img
+            src="https://store.figma.com/cdn/shop/products/Figma-Store-3814_1000x.jpg?v=1636599369"
+            alt="Thumbnail 1"
+            class="thumbnail"
+          />
+          <img
+            src="https://store.figma.com/cdn/shop/products/figma-store_tidy-up-tee_01_1000x.jpg?v=1670516715"
+            alt="Thumbnail 2"
+            class="thumbnail"
+          />
+          <img
+            src="https://store.figma.com/cdn/shop/products/Figma-Store-3504_1000x.jpg?v=1636599916"
+            alt="Thumbnail 3"
+            class="thumbnail"
+          />
+          <img
+            src="https://store.figma.com/cdn/shop/products/figma-store_tidy-up-tee_01_1000x.jpg?v=1670516715"
+            alt="Thumbnail 4"
+            class="thumbnail"
+          />
+          <img
+            src="https://store.figma.com/cdn/shop/products/Figma-Store-1096_1000x.jpg?v=1636599836"
+            alt="Thumbnail 5"
+            class="thumbnail"
+          />
+        </div>
+        <div class="main-image">
+          <img
+            src="https://store.figma.com/cdn/shop/products/figma-store_dress-code-hat_01_600x.png?v=1677707527"
+            width="4000"
+            height="5997"
+            loading="lazy"
+            class="featured-image"
+            id="main-image"
+          />
+        </div>
+      </div>
+      <div class="product-details">
+        <div class="layers">
+          <h1>Layers</h1>
+        </div>
+        <h1>Chunky Glyph Tee</h1>
+        <div class="size-guide">
+          <p>Size guide</p>
+          <div class="sizes">
+            <span>S</span>
+            <span>M</span>
+            <span>L</span>
+            <span>XL</span>
+            <span>2XL</span>
+          </div>
+          <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+        </div>
+        <button class="add-to-cart">ADD RS. 2,200.00</button>
+        <p class="description">
+          In case you missed it (how could you have missed it?) the shapes spell
+          Figma.
+        </p>
+      </div>
+    </div>
+
+
+  <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-left">
+            <div class="footer-shape">
+              THE <br />
+              FIGMA <br />
+              STORE
+            </div>
+          </div>
+          <div class="footer-center">
+            <p>
+              OBJECTS <br />
+              THAT <br />
+              INSPIRE.
+            </p>
+          </div>
+          <div class="footer-center">
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <p>
+              This site is powered by <strong>Me BhadraBytes</strong><br /><a
+                href="#"
+                >tc</a
+              >.
+            </p>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#">FIGMA ↗</a>
+          <a href="#">TWITTER</a>
+          <a href="#">INSTAGRAM</a>
+          <a href="#">YOUTUBE</a>
+        </div>
+        <div class="topBtn">
+          <button class="scroll-top" onclick="scrollToTop()">↑</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+          ⏳ OUR ⬛ TIME ⎼ ON ⎼ FIGMA'S ⎼ MARVELOUSLY ⬤ CONSIDERED ⏳ COLLECTION
+          ⏳ OF ⬛ OBJECTS ⬤ FOR ⏳
+        </marquee>
+      </div>
+    </footer>
+
+    <!-- Initially, show a message icon -->
+    <div class="message-icon" onclick="toggleHelpBox()">
+      <img src="help-desk.png" alt="Message Icon" />
+    </div>
+
+    <!-- Help box (form) -->
+    <aside class="help-box" id="helpBox">
+      <h3>Need Help?</h3>
+      <p>Just let us know. We will be happy to assist you.</p>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <textarea placeholder="Describe Your Problem" required></textarea>
+        <button type="submit">Send Enquiry</button>
+      </form>
+      <button class="close-button" onclick="toggleHelpBox()">Close</button>
+    </aside>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
